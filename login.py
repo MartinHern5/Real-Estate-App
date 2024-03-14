@@ -13,13 +13,6 @@ class Login(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
 
-with app.app_context():
-    db.create_all()
-    if not Login.query.filter_by(username='admin').first():
-        admin_user = Login(username='admin', password='1234')
-        db.session.add(admin_user)
-        db.session.commit()
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -27,7 +20,7 @@ def login():
         password = request.form['password']
         user = Login.query.filter_by(username=username, password=password).first()
         if user:
-            return redirect(url_for('home', username=username))
+            return redirect(url_for('home'  , username=username))
         else:
             flash('Invalid username or password. Please try again.')
             return redirect(url_for('login'))

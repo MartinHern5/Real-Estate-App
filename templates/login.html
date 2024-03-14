@@ -6,6 +6,16 @@
 </head>
 <body>
     <h1>Login</h1>
+    <!-- Display incorrect input message -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
     <form action="/login" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
