@@ -41,16 +41,60 @@ def home():
 def search():
     results = []
     if request.method == 'POST':
-        search_price = request.form['max_price']
+        df = pd.read_csv(CSV_FILE)
         
-        if search_price is not None:
-            df = pd.read_csv(CSV_FILE)
-            filtered_df = df[df['Listing Price'] <= float(search_price)]
-            results = filtered_df.to_dict(orient='records')
+        # Retrieve form data
+        min_price = request.form.get('min_price')
+        max_price = request.form.get('max_price')
+        beds = request.form.getlist('beds')
+        baths = request.form.getlist('baths')
+        min_year_built = request.form.get('min_year_built')
+        max_year_built = request.form.get('max_year_built')
+        square_ft = request.form.get('square_ft')
+        days_on_site = request.form.get('days_on_site')
+        status = request.form.get('status')
+        
+        if min_price:
+            df = df[df['Listing Price'] >= float(min_price)]
+        if max_price:
+            df = df[df['Listing Price'] <= float(max_price)]
             
-            results_count = len(results)
-            return render_template('search.html', results=results, results_count=results_count)
-    return redirect(url_for('home.html'))
+        if beds:
+            if beds == 5:
+                df = df[df['Beds'] >= int(beds)]
+            else:
+                df = df[df['Beds'] <= int(beds)]
+                
+        if baths:
+            if baths == 5:
+                df = df[df['Baths'] >= int(baths)]
+            else:
+                df = df[df['Baths'] <= int(baths)]
+                
+        if min_year_built:
+            df = df[df['Year Built'] >= int(min_year_built)]
+        if max_year_built:
+            df = df[df['Year Built'] <= int(max_year_built)]
+            
+        if (square_ft.isdigit()):
+            if (square_ft == 4000):
+                df = df[df['Square Ft'] >= int(square_ft)]
+            else:
+                df = df[df['Square Ft'] <= int(square_ft)]
+        
+        if (days_on_site.isdigit()):
+            if (days_on_site == 12):
+                df = df[df['Days on Site'] >= int(days_on_site)]
+            else:
+                df = df[df['Days on Site'] <= int(days_on_site)]
+                
+        if status != 'Any':
+            df = df[df["Status"] == status]
+            
+        results = df.to_dict(orient='records')
+        results_count = len(results)
+        return render_template('search.html', results=results, results_count=results_count)
+    return redirect(url_for('home'))
 
 if __name__ == '__main__':
     app.run(debug=True)
