@@ -41,14 +41,16 @@ def home():
 def search():
     results = []
     if request.method == 'POST':
-        search_price = request.form['search']
+        search_price = request.form['listing_price']
         
         if search_price is not None:
             df = pd.read_csv(CSV_FILE)
             filtered_df = df[df['Listing Price'] <= float(search_price)]
             results = filtered_df.to_dict(orient='records')
-            return render_template('search.html', results=results)
-    return render_template('home.html')
+            
+            results_count = len(results)
+            return render_template('search.html', results=results, results_count=results_count)
+    return redirect(url_for('home.html'))
 
 if __name__ == '__main__':
     app.run(debug=True)
