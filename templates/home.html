@@ -2,35 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome "Home"!</h1>
-    <p>Congratulations, {{ username }}! You have successfully logged in.</p>
+    <div class="container mt-5">
+        <h1>Welcome "Home"!</h1>
+        <p>Congratulations, {{ username }}! You have successfully logged in.</p>
 
-    <form action="/search" method="post">
-        <label for="status">Status:</label>
-        <input type="text" id="status" name="status"><br><br>
-        
-        <label for="listing_price">Listing Price:</label>
-        <input type="number" id="listing_price" name="listing_price"><br><br>
-        
-        <label for="square_ft">Square Ft:</label>
-        <input type="number" id="square_ft" name="square_ft"><br><br>
-        
-        <label for="year_built">Year Built:</label>
-        <input type="number" id="year_built" name="year_built"><br><br>
-        
-        <label for="beds">Beds:</label>
-        <input type="number" id="beds" name="beds"><br><br>
-        
-        <label for="baths">Baths:</label>
-        <input type="number" id="baths" name="baths"><br><br>
-        
-        <label for="days_on_site">Days on Site:</label>
-        <input type="number" id="days_on_site" name="days_on_site"><br><br>
+        <form action="/search" method="post" class="needs-validation" novalidate>
 
-        <input type="submit" value="Search">
-    </form>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select class="form-control" id="status" name="status">
+                    <option value="new">New</option>
+                    <option value="open">Open</option>
+                    <option value="closed">Closed</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="min_price">Min Listing Price:</label>
+                    <input type="number" class="form-control" id="min_price" name="min_price">
+                </div>
+                <div class="col">
+                    <label for="max_price">Max Listing Price:</label>
+                    <input type="number" class="form-control" id="max_price" name="max_price">
+                </div>
+            </div><br>
+
+            <div class="form-group">
+                <label for="square_ft">Square Ft:</label>
+                <select class="form-control" id="square_ft" name="square_ft">
+                    <option value="750">750</option>
+                    <!-- Incrementing 250 sqft up to a significant value. Adjust as necessary. -->
+                    <option value="1000">1000</option>
+                    <option value="1250">1250</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="min_year_built">Min Year Built:</label>
+                    <input type="number" class="form-control" id="min_year_built" name="min_year_built">
+                </div>
+                <div class="col">
+                    <label for="max_year_built">Max Year Built:</label>
+                    <input type="number" class="form-control" id="max_year_built" name="max_year_built">
+                </div>
+            </div><br>
+
+            <fieldset class="form-group">
+                <legend>Beds:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="beds" value="1" id="bed1">
+                    <label class="form-check-label" for="bed1">1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="beds" value="2" id="bed2">
+                    <label class="form-check-label" for="bed2">2</label>
+                </div>
+                <!-- Add more checkboxes as necessary up to 5+ -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bed5plus">
+                    <label class="form-check-label" for="bed5plus">5+</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>Baths:</legend>
+                <!-- Similar structure to Beds -->
+            </fieldset>
+
+            <div class="form-group">
+                <label for="days_on_site">Days on Site:</label>
+                <select class="form-control" id="days_on_site" name="days_on_site">
+                    <option value="1">1 month</option>
+                    <option value="2">2 months</option>
+                    <!-- Continue up to 12 months -->
+                    <option value="12">12 months</option>
+                    <option value="year+">Year+</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
 </body>
 </html>
