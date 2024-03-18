@@ -26,16 +26,23 @@
                     <fieldset class="form-group form-check-inline">
                         <label>Beds:</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="beds" value="1" id="bed1">
+                            <input class="form-check-input" type="radio" name="beds" value="1" id="bed1">
                             <label class="form-check-label" for="bed1">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="beds" value="2" id="bed2">
+                            <input class="form-check-input" type="radio" name="beds" value="2" id="bed2">
                             <label class="form-check-label" for="bed2">2</label>
                         </div>
-                        <!-- Add more checkboxes as necessary up to 5+ -->
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bed5+">
+                            <input class="form-check-input" type="radio" name="beds" value="3" id="bed3">
+                            <label class="form-check-label" for="bed3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="beds" value="4" id="bed4">
+                            <label class="form-check-label" for="bed4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="beds" value="5" id="bed5+">
                             <label class="form-check-label" for="bed5+">5+</label>
                         </div>
                     </fieldset>
@@ -45,16 +52,23 @@
                     <fieldset class="form-group form-check-inline">
                         <label>Baths:</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="baths" value="1" id="bath1">
-                            <label class="form-check-label" for="bath1">1</label>
+                            <input class="form-check-input" type="radio" name="baths" value="1" id="bath1+">
+                            <label class="form-check-label" for="bath1">1+</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="baths" value="2" id="bath2">
-                            <label class="form-check-label" for="bath2">2</label>
+                            <input class="form-check-input" type="radio" name="baths" value="2" id="bath2+">
+                            <label class="form-check-label" for="bath2">2+</label>
                         </div>
-                        <!-- Add more checkboxes as necessary up to 5+ -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="baths" value="3" id="bath3+">
+                            <label class="form-check-label" for="bath1">3+</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="baths" value="4" id="bath4+">
+                            <label class="form-check-label" for="bath1">4+</label>
+                        </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bath5+">
+                            <input class="form-check-input" type="radio" name="beds" value="5" id="bath5+">
                             <label class="form-check-label" for="bath5+">5+</label>
                         </div>
                     </fieldset>
@@ -74,11 +88,21 @@
                 <div class="col">
                     <label for="square_ft">Square Ft:</label>
                     <select class="form-control" id="square_ft" name="square_ft">
-                        <option value="750">750</option>
-                        <!-- Incrementing 250 sqft up to a significant value. Adjust as necessary. -->
-                        <option value="1000">1000</option>
-                        <option value="1250">1250</option>
-                        <!-- Add more options as needed -->
+                        <option value="750">750 sqft</option>
+                        <option value="1000">1000 sqft</option>
+                        <option value="1250">1250 sqft</option>
+                        <option value="1500">1500 sqft</option>
+                        <option value="1750">1750 sqft</option>
+                        <option value="2000">2000 sqft</option>
+                        <option value="2250">2250 sqft</option>
+                        <option value="2500">2500 sqft</option>
+                        <option value="2750">2750 sqft</option>
+                        <option value="3000">3000 sqft</option>
+                        <option value="3250">3250 sqft</option>
+                        <option value="3500">3500 sqft</option>
+                        <option value="3750">3750 sqft</option>
+                        <option value="3750">3750 sqft</option>
+                        <option value="4000">4000+ sqft</option>
                     </select>
                 </div>
 
@@ -87,9 +111,16 @@
                     <select class="form-control" id="days_on_site" name="days_on_site">
                         <option value="1">1 month</option>
                         <option value="2">2 months</option>
-                        <!-- Continue up to 12 months -->
-                        <option value="12">12 months</option>
-                        <option value="year+">Year+</option>
+                        <option value="3">3 month</option>
+                        <option value="4">4 months</option>
+                        <option value="5">5 month</option>
+                        <option value="6">6 months</option>
+                        <option value="7">7 month</option>
+                        <option value="8">8 months</option>
+                        <option value="9">9 month</option>
+                        <option value="10">10 months</option>
+                        <option value="11">11 months</option>
+                        <option value="12">12+ months</option>
                     </select>
                 </div>
 
