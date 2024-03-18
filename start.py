@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
+import pandas as pd
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yoursecretkey'
@@ -7,11 +8,16 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///real_estate_app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+CSV_FILE = 'instance/properties.csv'
 
 class Login(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
+    
+@app.route('/')
+def start():
+    return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -30,6 +36,19 @@ def login():
 def home():
     username = request.args.get('username')
     return render_template('home.html', username=username)
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    results = []
+    if request.method == 'POST':
+        search_price = request.form['search']
+        
+        if search_price is not None:
+            df = pd.read_csv(CSV_FILE)
+            filtered_df = df[df['Listing Price'] <= float(search_price)]
+            results = filtered_df.to_dict(orient='records')
+            return render_template('search.html', results=results)
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

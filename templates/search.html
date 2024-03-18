@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Items</title>
+    <title>Search Results</title>
 </head>
 <body>    
     <h1>Results:</h1>
     <ul>
         {% for item in results %}
-            <li>{{ item['Name'] }}: ${{ item['Listing Price'] }}</li>  <!-- Adjusted placeholders -->
+        <li>
+            <strong>{{ item['Address'] }}</strong><br>
+            Status: {{ item['Status'] }}<br>
+            Listing Price: ${{ item['Listing Price'] }}<br>
+            Square Feet: {{ item['Square Ft'] }} sqft<br>
+            Year Built: {{ item['Year Built'] }}<br>
+            Beds: {{ item['Beds'] }}<br>
+            Baths: {{ item['Baths'] }}<br>
+            Days on Site: {{ item['Days on Site'] }}<br>
+            Location: [{{ item['Latitude'] }}, {{ item['Longitude'] }}]<br>
+            <a href="{{ item['URL'] }}">View Listing</a>
+        </li>
         {% else %}
             <li>No items found below this price.</li>
         {% endfor %}
