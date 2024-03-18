@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <title>Search Items</title>
 </head>
-<body>
-    <h1>Search for Items Below a Price</h1>
-    <form action="/search" method="POST">
-        <input type="number" name="search" step="0.01" placeholder="Enter price">
-        <button type="submit">Search</button>
-    </form>
-
-    <h2>Results:</h2>
+<body>    
+    <h1>Results:</h1>
     <ul>
         {% for item in results %}
-            <li>{{ item.item }}: ${{ item.price }}</li>
+            <li>{{ item['Name'] }}: ${{ item['Listing Price'] }}</li>  <!-- Adjusted placeholders -->
         {% else %}
             <li>No items found below this price.</li>
         {% endfor %}

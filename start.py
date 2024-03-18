@@ -20,7 +20,7 @@ def login():
         password = request.form['password']
         user = Login.query.filter_by(username=username, password=password).first()
         if user:
-            return redirect(url_for('home'  , username=username))
+            return redirect(url_for('home', username=username))
         else:
             flash('Invalid username or password. Please try again.')
             return redirect(url_for('login'))
