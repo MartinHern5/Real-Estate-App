@@ -10,16 +10,7 @@
         <h1>Welcome "Home"!</h1>
         <p>Congratulations, {{ username }}! You have successfully logged in.</p>
 
-        <form action="/search" method="post" class="needs-validation" novalidate>
-
-            <div class="form-group">
-                <label for="status">Status:</label>
-                <select class="form-control" id="status" name="status">
-                    <option value="new">New</option>
-                    <option value="open">Open</option>
-                    <option value="closed">Closed</option>
-                </select>
-            </div>
+        <form action="/search" method="post">
 
             <div class="form-row">
                 <div class="col">
@@ -30,17 +21,44 @@
                     <label for="max_price">Max Listing Price:</label>
                     <input type="number" class="form-control" id="max_price" name="max_price">
                 </div>
-            </div><br>
 
-            <div class="form-group">
-                <label for="square_ft">Square Ft:</label>
-                <select class="form-control" id="square_ft" name="square_ft">
-                    <option value="750">750</option>
-                    <!-- Incrementing 250 sqft up to a significant value. Adjust as necessary. -->
-                    <option value="1000">1000</option>
-                    <option value="1250">1250</option>
-                    <!-- Add more options as needed -->
-                </select>
+                <div class="col">
+                    <fieldset class="form-group form-check-inline">
+                        <label>Beds:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="beds" value="1" id="bed1">
+                            <label class="form-check-label" for="bed1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="beds" value="2" id="bed2">
+                            <label class="form-check-label" for="bed2">2</label>
+                        </div>
+                        <!-- Add more checkboxes as necessary up to 5+ -->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bed5+">
+                            <label class="form-check-label" for="bed5+">5+</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col">
+                    <fieldset class="form-group form-check-inline">
+                        <label>Baths:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="baths" value="1" id="bath1">
+                            <label class="form-check-label" for="bath1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="baths" value="2" id="bath2">
+                            <label class="form-check-label" for="bath2">2</label>
+                        </div>
+                        <!-- Add more checkboxes as necessary up to 5+ -->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bath5+">
+                            <label class="form-check-label" for="bath5+">5+</label>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
 
             <div class="form-row">
@@ -52,39 +70,43 @@
                     <label for="max_year_built">Max Year Built:</label>
                     <input type="number" class="form-control" id="max_year_built" name="max_year_built">
                 </div>
-            </div><br>
 
-            <fieldset class="form-group">
-                <legend>Beds:</legend>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="beds" value="1" id="bed1">
-                    <label class="form-check-label" for="bed1">1</label>
+                <div class="col">
+                    <label for="square_ft">Square Ft:</label>
+                    <select class="form-control" id="square_ft" name="square_ft">
+                        <option value="750">750</option>
+                        <!-- Incrementing 250 sqft up to a significant value. Adjust as necessary. -->
+                        <option value="1000">1000</option>
+                        <option value="1250">1250</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="beds" value="2" id="bed2">
-                    <label class="form-check-label" for="bed2">2</label>
-                </div>
-                <!-- Add more checkboxes as necessary up to 5+ -->
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="beds" value="5+" id="bed5plus">
-                    <label class="form-check-label" for="bed5plus">5+</label>
-                </div>
-            </fieldset>
 
-            <fieldset class="form-group">
-                <legend>Baths:</legend>
-                <!-- Similar structure to Beds -->
-            </fieldset>
+                <div class="col">
+                    <label for="days_on_site">Days on Site:</label>
+                    <select class="form-control" id="days_on_site" name="days_on_site">
+                        <option value="1">1 month</option>
+                        <option value="2">2 months</option>
+                        <!-- Continue up to 12 months -->
+                        <option value="12">12 months</option>
+                        <option value="year+">Year+</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="days_on_site">Days on Site:</label>
-                <select class="form-control" id="days_on_site" name="days_on_site">
-                    <option value="1">1 month</option>
-                    <option value="2">2 months</option>
-                    <!-- Continue up to 12 months -->
-                    <option value="12">12 months</option>
-                    <option value="year+">Year+</option>
-                </select>
+                <div class="col">
+                    <label for="status">Status:</label>
+                    <select class="form-control" id="status" name="status">
+                        <option value="new">New</option>
+                        <option value="open">Open</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="form-row">
+                <input type="text" class="form-control" id="search" name="search" placeholder="Search">
             </div>
 
             <button type="submit" class="btn btn-primary">Search</button>

@@ -41,7 +41,7 @@ def home():
 def search():
     results = []
     if request.method == 'POST':
-        search_price = request.form['listing_price']
+        search_price = request.form['max_price']
         
         if search_price is not None:
             df = pd.read_csv(CSV_FILE)
