@@ -46,8 +46,8 @@ def search():
         # Retrieve form data
         min_price = request.form.get('min_price')
         max_price = request.form.get('max_price')
-        beds = request.form.getlist('beds')
-        baths = request.form.getlist('baths')
+        beds = request.form.get('beds')
+        baths = request.form.get('baths')
         min_year_built = request.form.get('min_year_built')
         max_year_built = request.form.get('max_year_built')
         square_ft = request.form.get('square_ft')
@@ -60,16 +60,10 @@ def search():
             df = df[df['Listing Price'] <= float(max_price)]
             
         if beds:
-            if beds == 5:
-                df = df[df['Beds'] >= int(beds)]
-            else:
-                df = df[df['Beds'] <= int(beds)]
+            df = df[df['Beds'] >= float(beds)]
                 
         if baths:
-            if baths == 5:
-                df = df[df['Baths'] >= int(baths)]
-            else:
-                df = df[df['Baths'] <= int(baths)]
+            df = df[df['Baths'] >= float(baths)]
                 
         if min_year_built:
             df = df[df['Year Built'] >= int(min_year_built)]
@@ -77,13 +71,10 @@ def search():
             df = df[df['Year Built'] <= int(max_year_built)]
             
         if (square_ft.isdigit()):
-            if (square_ft == 4000):
-                df = df[df['Square Ft'] >= int(square_ft)]
-            else:
-                df = df[df['Square Ft'] <= int(square_ft)]
+            df = df[df['Square Ft'] >= int(square_ft)]
         
         if (days_on_site.isdigit()):
-            if (days_on_site == 12):
+            if (int(days_on_site) == 12):
                 df = df[df['Days on Site'] >= int(days_on_site)]
             else:
                 df = df[df['Days on Site'] <= int(days_on_site)]
