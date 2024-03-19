@@ -76,7 +76,7 @@ def search():
         
         if days_on_site.isdigit():
             if (int(days_on_site) == 12):
-                df = df[df['Days on Site'] >= int(361)]
+                df = df[df['Days on Site'] <= int(365)]
             else:
                 df = df[df['Days on Site'] <= int(days_on_site * 30)]
                 
