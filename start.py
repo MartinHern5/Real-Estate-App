@@ -75,9 +75,9 @@ def search():
         
         if (days_on_site.isdigit()):
             if (int(days_on_site) == 12):
-                df = df[df['Days on Site'] >= int(days_on_site)]
+                df = df[df['Days on Site'] >= int(361)]
             else:
-                df = df[df['Days on Site'] <= int(days_on_site)]
+                df = df[df['Days on Site'] <= int(days_on_site * 30)]
                 
         if status != 'Any':
             df = df[df["Status"] == status]
