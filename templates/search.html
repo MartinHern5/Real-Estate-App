@@ -2,7 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>    
     <h1>Results:</h1>
@@ -10,15 +56,15 @@
     <ul>
         {% for item in results %}
         <li>
-            <strong>{{ item['Address'] }}</strong><br>
-            Status: {{ item['Status'] }}<br>
-            Listing Price: ${{ item['Listing Price'] }}<br>
-            Square Feet: {{ item['Square Ft'] }} sqft<br>
-            Year Built: {{ item['Year Built'] }}<br>
-            Beds: {{ item['Beds'] }}<br>
-            Baths: {{ item['Baths'] }}<br>
-            Days on Site: {{ item['Days on Site'] }}<br>
-            <a href="{{ item['URL'] }}">View Listing</a>
+            <p><strong>{{ item['Address'] }}</strong></p>
+            <p>Status: {{ item['Status'] }}</p>
+            <p>Listing Price: ${{ item['Listing Price'] }}</p>
+            <p>Square Feet: {{ item['Square Ft'] }} sqft</p>
+            <p>Year Built: {{ item['Year Built'] }}</p>
+            <p>Beds: {{ item['Beds'] }}</p>
+            <p>Baths: {{ item['Baths'] }}</p>
+            <p>Days on Site: {{ item['Days on Site'] }}</p>
+            <p><a href="{{ item['URL'] }}">View Listing</a></p>
         </li>
         {% else %}
             <li>No items found below this price.</li>
