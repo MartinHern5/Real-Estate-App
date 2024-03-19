@@ -53,16 +53,17 @@ def search():
         square_ft = request.form.get('square_ft')
         days_on_site = request.form.get('days_on_site')
         status = request.form.get('status')
+        advanceSearch = request.form.get('advanceSearch')
         
         if min_price:
             df = df[df['Listing Price'] >= float(min_price)]
         if max_price:
             df = df[df['Listing Price'] <= float(max_price)]
             
-        if beds:
+        if beds.isdigit():
             df = df[df['Beds'] >= float(beds)]
                 
-        if baths:
+        if baths.isdigit():
             df = df[df['Baths'] >= float(baths)]
                 
         if min_year_built:
@@ -70,18 +71,21 @@ def search():
         if max_year_built:
             df = df[df['Year Built'] <= int(max_year_built)]
             
-        if (square_ft.isdigit()):
+        if square_ft.isdigit():
             df = df[df['Square Ft'] >= int(square_ft)]
         
-        if (days_on_site.isdigit()):
+        if days_on_site.isdigit():
             if (int(days_on_site) == 12):
                 df = df[df['Days on Site'] >= int(361)]
             else:
                 df = df[df['Days on Site'] <= int(days_on_site * 30)]
                 
         if status != 'Any':
-            df = df[df["Status"] == status]
+            df = df[df['Status'] == status]
             
+        if advanceSearch:
+            df = df[df['Address'] == advanceSearch]
+
         results = df.to_dict(orient='records')
         results_count = len(results)
         return render_template('search.html', results=results, results_count=results_count)

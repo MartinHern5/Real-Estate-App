@@ -23,55 +23,27 @@
                 </div>
 
                 <div class="col">
-                    <fieldset class="form-group form-check-inline">
-                        <label>Beds:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="beds" value="1" id="bed1">
-                            <label class="form-check-label" for="bed1">1+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beds" value="2" id="bed2">
-                            <label class="form-check-label" for="bed2">2+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beds" value="3" id="bed3">
-                            <label class="form-check-label" for="bed3">3+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beds" value="4" id="bed4">
-                            <label class="form-check-label" for="bed4">4+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beds" value="5" id="bed5">
-                            <label class="form-check-label" for="bed5">5+</label>
-                        </div>
-                    </fieldset>
+                    <label for="beds">Beds:</label>
+                    <select class="form-control" id="beds" name="beds">
+                        <option value="Any">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                    </select>
                 </div>
 
                 <div class="col">
-                    <fieldset class="form-group form-check-inline">
-                        <label>Baths:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="baths" value="1" id="bath1">
-                            <label class="form-check-label" for="bath1">1+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="baths" value="2" id="bath2">
-                            <label class="form-check-label" for="bath2">2+</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="baths" value="3" id="bath3">
-                            <label class="form-check-label" for="bath3">3+</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="baths" value="4" id="bath4">
-                            <label class="form-check-label" for="bath4">4+</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="baths" value="5" id="bath5">
-                            <label class="form-check-label" for="bath5">5+</label>
-                        </div>
-                    </fieldset>
+                    <label for="baths">Baths:</label>
+                    <select class="form-control" id="baths" name="baths">
+                        <option value="Any">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                    </select>
                 </div>
             </div>
 
@@ -134,7 +106,8 @@
             <br><br>
 
             <div class="form-row">
-                <input type="text" class="form-control" id="search" name="search" placeholder="Search">
+                <label for="advanceSearch">Advanced Search:</label>
+                <input type="text" class="form-control" id="advanceSearch" name="advanceSearch" placeholder="Search">
             </div>
 
             <button type="submit" class="btn btn-primary">Search</button>
