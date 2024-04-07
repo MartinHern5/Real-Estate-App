@@ -1,4 +1,4 @@
-﻿ID,Address,Status,Listing Price,Square Ft,Year Built,Beds,Baths,Days on Site,Latitude,Longitude ,URL
+﻿ID,Address,Status,Listing Price,Square Ft,Year Built,Beds,Baths,Days on Site,Latitude,Longitude ,URL, House_Img, Google_Maps_Img
 1,212 Morgan Circle,NEW LISTING,300000,1718,1994,3,2,4,39.49118,-84.74771,https://www.xome.com/homes-for-sale/212-Morgan-Circle-Oxford-OH-45056-389749101
 2,6150 Fairfield Road,Active,249900,1234,1960,4,2,48,39.50825,-84.75697,https://www.xome.com/homes-for-sale/6150-Fairfield-Road-Oxford-OH-45056-388346064
 3,784 High Meadow Lane,Active,375000,1420,1994,3,2,52,39.50042,-84.7668,https://www.xome.com/homes-for-sale/784-High-Meadow-Lane-Oxford-OH-45056-388260299
