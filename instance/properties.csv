@@ -1,114 +1,114 @@
-﻿ID,Address,Status,Listing Price,Square Ft,Year Built,Beds,Baths,Days on Site,Latitude,Longitude ,URL, House_Img, Google_Maps_Img
-1,212 Morgan Circle,NEW LISTING,300000,1718,1994,3,2,4,39.49118,-84.74771,https://www.xome.com/homes-for-sale/212-Morgan-Circle-Oxford-OH-45056-389749101
-2,6150 Fairfield Road,Active,249900,1234,1960,4,2,48,39.50825,-84.75697,https://www.xome.com/homes-for-sale/6150-Fairfield-Road-Oxford-OH-45056-388346064
-3,784 High Meadow Lane,Active,375000,1420,1994,3,2,52,39.50042,-84.7668,https://www.xome.com/homes-for-sale/784-High-Meadow-Lane-Oxford-OH-45056-388260299
-4,Nichols Road,Pending,324900,1968,1972,2,2,52,39.47126,-84.67455,https://www.xome.com/homes-for-sale/Nichols-Road-Oxford-OH-45056-388244957
-5,44 Hidden Creek Drive,Active,529900,3131,1989,4,3,61,39.50612,-84.7691,https://www.xome.com/homes-for-sale/44-Hidden-Creek-Drive-Oxford-OH-45056-387991621
-6,125 Ridge Avenue,Active,375000,1688,1958,3,2,68,39.5092,-84.75917,https://www.xome.com/homes-for-sale/125-Ridge-Avenue-Oxford-OH-45056-387881311
-7,7040 Contreras Road,Active,739900,2971,2007,4,4,72,39.51937,-84.78475,https://www.xome.com/homes-for-sale/7040-Contreras-Road-Oxford-OH-45056-387764552
-8,550 Melissa Drive,Pending,259900,2367,1972,4,2,81,39.49829,-84.75159,https://www.xome.com/homes-for-sale/550-Melissa-Drive-Oxford-OH-45056-387537054
-9,4701 Booth Road,Active,290500,1904,1960,4,3,87,39.47821,-84.71242,https://www.xome.com/homes-for-sale/4701-Booth-Road-Oxford-OH-45056-387344500
-10,Booth Road,Active,290500,1904,1960,4,3,87,39.47851,-84.71366,https://www.xome.com/homes-for-sale/Booth-Road-Oxford-OH-45056-387540215
-11,5176 Westgate Drive,Closed,200000,2192,1961,3,2,101,39.51706,-84.75351,https://www.xome.com/homes-for-sale/5176-Westgate-Drive-Oxford-OH-45056-386979437
-12,6135 Fairfield Road Unit 33,Pending,114900,1046,1984,2,2,111,39.50762,-84.75664,https://www.xome.com/homes-for-sale/6135-Fairfield-Road-Unit-33-Oxford-OH-45056-387538530
-13,6192 Vereker Drive,Closed,262000,1188,1959,3,2,114,39.50914,-84.75867,https://www.xome.com/homes-for-sale/6192-Vereker-Drive-Oxford-OH-45056-387533427
-14,Booth Road,Active,484900,3413,1992,5,4,115,39.47851,-84.71366,https://www.xome.com/homes-for-sale/Booth-Road-Oxford-Twp-OH-45056-387538235
-15,5577 Garver Elliott Road,Closed,175000,1413,1984,3,2,115,39.46372,-84.73524,https://www.xome.com/homes-for-sale/5577-Garver-Elliott-Road-Oxford-OH-45056-387538089
-16,26 Woodruff Court,Closed,375000,1208,1944,4,2,115,39.51451,-84.74122,https://www.xome.com/homes-for-sale/26-Woodruff-Court-Oxford-OH-45056-387536476
-17,113 N Elm Street,Active,787000,2064,1904,8,3,127,39.51219,-84.7469,https://www.xome.com/homes-for-sale/113-N-Elm-Street-Oxford-OH-45056-387534692
-18,116 Country Club Drive,Closed,239900,2104,1973,4,3,131,39.51631,-84.76596,https://www.xome.com/homes-for-sale/116-Country-Club-Drive-Oxford-OH-45056-387535444
-19,1218 Tollgate Drive,Closed,249000,1722,1968,3,2,138,39.50702,-84.76279,https://www.xome.com/homes-for-sale/1218-Tollgate-Drive-Oxford-OH-45056-387537856
-20,102 Stone Creek Drive,Pending,625000,3976,1995,4,5,139,39.51301,-84.76824,https://www.xome.com/homes-for-sale/102-Stone-Creek-Drive-Oxford-OH-45056-385588434
-21,Stone Creek Drive,Pending,625000,3976,1995,4,5,139,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387537170
-22,3856 Kehr Road,Active,550000,1519,1993,3,2,142,39.48486,-84.74616,https://www.xome.com/homes-for-sale/3856-Kehr-Road-Oxford-OH-45056-385536851
-23,Kehr Road,Active,550000,1519,1993,3,2,142,39.48133,-84.7478,https://www.xome.com/homes-for-sale/Kehr-Road-Oxford-Twp-OH-45056-387538686
-24,Chestnut Street,Closed,265000,1430,1956,3,3,153,39.5006,-84.74252,https://www.xome.com/homes-for-sale/Chestnut-Street-Oxford-OH-45056-386639919
-25,Brookville Road,Closed,315000,2269,2005,4,3,156,39.50054,-84.75963,https://www.xome.com/homes-for-sale/Brookville-Road-Oxford-OH-45056-387532827
-26,Heather Ridge Court,Closed,369500,3293,1992,3,3,180,39.50071,-84.76648,https://www.xome.com/homes-for-sale/Heather-Ridge-Court-Oxford-OH-45056-387538893
-27,Vereker Drive,Closed,234900,,1987,3,2,181,39.50887,-84.75296,https://www.xome.com/homes-for-sale/Vereker-Drive-Oxford-OH-45056-387538638
-28,Main Street,Closed,39000,1200,1930,3,1,181,39.48829,-84.65376,https://www.xome.com/homes-for-sale/Main-Street-Reily-Twp-OH-45056-387531092
-29,735 High Meadow Lane,Closed,390000,2558,1991,3,3,184,39.50073,-84.76517,https://www.xome.com/homes-for-sale/735-High-Meadow-Lane-Oxford-OH-45056-387531373
-30,Chestnut Street,Closed,255000,1305,1966,3,3,184,39.5006,-84.74252,https://www.xome.com/homes-for-sale/Chestnut-Street-Oxford-OH-45056-387531241
-31,Imhoff Road,Closed,789900,2317,2006,3,3,185,39.47161,-84.76916,https://www.xome.com/homes-for-sale/Imhoff-Road-Reily-Twp-OH-45056-387536866
-32,14 Quail Ridge Drive,Closed,300000,,1984,4,3,188,39.50043,-84.76386,https://www.xome.com/homes-for-sale/14-Quail-Ridge-Drive-Oxford-OH-45056-387531423
-33,430 Bouden Lane,Closed,295000,,1948,4,2,192,39.51616,-84.73701,https://www.xome.com/homes-for-sale/430-Bouden-Lane-Oxford-OH-45056-387531098
-34,Dufour Lane,Closed,389900,2534,2016,4,3,193,39.5228,-84.75447,https://www.xome.com/homes-for-sale/Dufour-Lane-Oxford-OH-45056-387533674
-35,Honor Lane,Closed,384900,2437,2005,4,3,194,39.52212,-84.75291,https://www.xome.com/homes-for-sale/Honor-Lane-Oxford-OH-45056-387531640
-36,Fairfield Road,Closed,695000,1,1963,4,5,195,39.50748,-84.74966,https://www.xome.com/homes-for-sale/Fairfield-Road-Oxford-OH-45056-387531532
-37,7798 Dunwoody Road,Closed,589900,,1999,3,4,198,39.40665,-84.80738,https://www.xome.com/homes-for-sale/7798-Dunwoody-Road-Oxford-OH-45056-387536547
-38,Gardenia Drive,Closed,319000,,2010,3,4,198,39.49371,-84.7459,https://www.xome.com/homes-for-sale/Gardenia-Drive-Oxford-OH-45056-387532894
-39,Stephenson Road,Closed,419900,2106,1979,4,3,199,39.46389,-84.70142,https://www.xome.com/homes-for-sale/Stephenson-Road-Reily-Twp-OH-45056-387538289
-40,Stone Creek Drive,Closed,850000,4848,1992,5,4,200,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387535020
-41,Stone Creek Drive,Closed,675000,3345,1993,3,3,205,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387533225
-42,843 Dufour Lane,Closed,420000,2500,2006,3,4,209,39.52042,-84.75484,https://www.xome.com/homes-for-sale/843-Dufour-Lane-Oxford-OH-45056-385192183
-43,111 Marti Court,Closed,242500,1288,1981,3,2,219,39.51162,-84.75301,https://www.xome.com/homes-for-sale/111-Marti-Court-Oxford-OH-45056-387512149
-44,4333 Main Street,Closed,224000,1824,1880,4,2,220,39.49673,-84.66219,https://www.xome.com/homes-for-sale/4333-Main-Street-Oxford-OH-45056-387531849
-45,2275 Oxford Trenton Road,Closed,375000,1740,1978,3,2,220,39.50866,-84.63396,https://www.xome.com/homes-for-sale/2275-Oxford-Trenton-Road-Oxford-OH-45056-383125130
-46,2727 Oxford Trenton Road,Closed,425000,2628,1999,5,5,226,39.5075,-84.65149,https://www.xome.com/homes-for-sale/2727-Oxford-Trenton-Road-Milford-Twp-OH-45056-382896419
-47,134 Pin Oak Drive,Closed,315000,2384,1964,4,3,229,39.51347,-84.7584,https://www.xome.com/homes-for-sale/134-Pin-Oak-Drive-Oxford-OH-45056-387523419
-48,1858 Reily Woods Lane,Closed,409000,2002,2003,4,3,234,39.43693,-84.72575,https://www.xome.com/homes-for-sale/1858-Reily-Woods-Lane-Reily-Twp-OH-45056-387511974
-49,435 Emerald Woods Drive,Closed,440000,2595,1973,3,2,237,39.50373,-84.7579,https://www.xome.com/homes-for-sale/435-Emerald-Woods-Drive-Oxford-OH-45056-387521617
-50,4620 Stephenson Road,Closed,353000,1760,1958,4,2,240,39.46412,-84.70827,https://www.xome.com/homes-for-sale/4620-Stephenson-Road-Reily-Twp-OH-45056-387521494
-51,923 Tollgate Drive,Closed,225000,1326,1975,3,2,245,39.50603,-84.75726,https://www.xome.com/homes-for-sale/923-Tollgate-Drive-Oxford-OH-45056-387511706
-52,3269 Shollenbarger Road,Closed,245000,1066,1979,3,2,253,39.49437,-84.66724,https://www.xome.com/homes-for-sale/3269-Shollenbarger-Road-Milford-Twp-OH-45056-387520699
-53,Contreras Road,Active,739900,2971,2007,4,4,254,39.51057,-84.75027,https://www.xome.com/homes-for-sale/Contreras-Road-Oxford-Twp-OH-45056-387538550
-54,309 Erickson Drive,Closed,305000,2128,1970,3,3,254,39.50746,-84.7607,https://www.xome.com/homes-for-sale/309-Erickson-Drive-Oxford-OH-45056-387525972
-55,7178 Ringwood Road,Closed,475000,1966,2006,3,3,254,39.53165,-84.78857,https://www.xome.com/homes-for-sale/7178-Ringwood-Road-Oxford-Twp-OH-45056-387520698
-56,2660 Indian Creek Road,Closed,330000,2036,1997,4,3,257,39.45676,-84.77836,https://www.xome.com/homes-for-sale/2660-Indian-Creek-Road-Reily-Twp-OH-45056-387520764
-57,949 Silvoor Lane,Closed,500000,5432,1951,5,4,261,39.49835,-84.73383,https://www.xome.com/homes-for-sale/949-Silvoor-Lane-Oxford-OH-45056-387520668
-58,7 W Chestnut Street,Closed,302500,1664,2006,4,2,261,39.50032,-84.7431,https://www.xome.com/homes-for-sale/7-W-Chestnut-Street-Oxford-OH-45056-387520666
-59,3525 Ward Way,Closed,518000,3494,2005,4,4,261,39.47719,-84.70252,https://www.xome.com/homes-for-sale/3525-Ward-Way-Hanover-Twp-OH-45056-381906425
-60,109 Lantern Ridge Road,Closed,450000,1705,2003,4,3,263,39.50212,-84.76966,https://www.xome.com/homes-for-sale/109-Lantern-Ridge-Road-Oxford-OH-45056-381942905
-61,549 Melissa Drive,Closed,225000,1398,1981,2,2,265,39.49787,-84.75167,https://www.xome.com/homes-for-sale/549-Melissa-Drive-Oxford-OH-45056-387525908
-62,3504 Ward Way,Closed,460000,3762,2008,4,4,267,39.47662,-84.70053,https://www.xome.com/homes-for-sale/3504-Ward-Way-Hanover-Twp-OH-45056-383162487
-63,150 Prevalent Drive,Closed,375000,3084,1995,4,4,275,39.516,-84.76917,https://www.xome.com/homes-for-sale/150-Prevalent-Drive-Oxford-OH-45056-387526505
-64,Indian Ridge Woods Drive,Pending,730000,6635,2001,5,6,275,39.46375,-84.68518,https://www.xome.com/homes-for-sale/Indian-Ridge-Woods-Drive-Hanover-Twp-OH-45056-383175492
-65,5407 Hester Road,Closed,150000,1254,2003,2,2,277,39.52036,-84.75742,https://www.xome.com/homes-for-sale/5407-Hester-Road-Oxford-OH-45056-387526224
-66,602 Melissa Drive,Closed,250000,1480,1967,3,3,277,39.49841,-84.75295,https://www.xome.com/homes-for-sale/602-Melissa-Drive-Oxford-OH-45056-387521429
-67,5470 Brown Road,Closed,625000,3216,1999,6,4,277,39.5234,-84.74293,https://www.xome.com/homes-for-sale/5470-Brown-Road-Oxford-Twp-OH-45056-381399670
-68,1653 Oxford Trenton Road,Closed,449900,1845,1989,3,2,278,39.50989,-84.61662,https://www.xome.com/homes-for-sale/1653-Oxford-Trenton-Road-Milford-Twp-OH-45056-381517993
-69,117 W Church Street,Closed,700000,2006,1914,4,3,279,39.51134,-84.74498,https://www.xome.com/homes-for-sale/117-W-Church-Street-Oxford-OH-45056-387512195
-70,260 Northridge Drive,Closed,499999,2313,1997,4,4,279,39.52183,-84.75205,https://www.xome.com/homes-for-sale/260-Northridge-Drive-Oxford-OH-45056-381557988
-71,590 Honor Lane,Closed,399900,2896,2005,4,4,282,39.52214,-84.7526,https://www.xome.com/homes-for-sale/590-Honor-Lane-Oxford-OH-45056-387525097
-72,4786 Booth Road,Closed,335000,1915,1990,3,2,283,39.47888,-84.71509,https://www.xome.com/homes-for-sale/4786-Booth-Road-Oxford-Twp-OH-45056-387524847
-73,Sycamore Street,Closed,298000,1882,1983,4,3,283,39.51511,-84.74152,https://www.xome.com/homes-for-sale/Sycamore-Street-Oxford-OH-45056-381663741
-74,111 Gardenia Drive,Closed,347900,2292,2007,4,3,283,39.49344,-84.74307,https://www.xome.com/homes-for-sale/111-Gardenia-Drive-Oxford-OH-45056-381496256
-75,6340 Brown Road,Closed,793000,3952,1972,5,3,284,39.54573,-84.74644,https://www.xome.com/homes-for-sale/6340-Brown-Road-Oxford-Twp-OH-45056-387525664
-76,6043 Vereker Drive,Closed,259000,1406,1987,3,2,284,39.50865,-84.75497,https://www.xome.com/homes-for-sale/6043-Vereker-Drive-Oxford-OH-45056-382040191
-77,7524 Stillwell Beckett Road,Closed,399900,2196,1989,3,3,284,39.48994,-84.80075,https://www.xome.com/homes-for-sale/7524-Stillwell-Beckett-Road-Oxford-Twp-OH-45056-381155163
-78,6215 Stillwell Beckett Road,Closed,249900,1628,1967,4,2,285,39.47911,-84.75999,https://www.xome.com/homes-for-sale/6215-Stillwell-Beckett-Road-Oxford-Twp-OH-45056-387523926
-79,623 Brill Drive,Closed,185000,1025,1974,3,1,287,39.50297,-84.75432,https://www.xome.com/homes-for-sale/623-Brill-Drive-Oxford-OH-45056-381077386
-80,502 White Oak Drive,Closed,399900,2380,1981,4,3,289,39.50251,-84.76366,https://www.xome.com/homes-for-sale/502-White-Oak-Drive-Oxford-OH-45056-387526453
-81,170 Hilltop Road,Closed,419000,2330,1957,3,4,290,39.51391,-84.75477,https://www.xome.com/homes-for-sale/170-Hilltop-Road-Oxford-OH-45056-387525685
-82,619 Brill Drive,Closed,189900,1025,1974,3,1,292,39.50297,-84.75407,https://www.xome.com/homes-for-sale/619-Brill-Drive-Oxford-OH-45056-387526210
-83,3886 Lanes Mill Road,Closed,199900,1920,1960,3,2,296,39.48582,-84.68719,https://www.xome.com/homes-for-sale/3886-Lanes-Mill-Road-Oxford-OH-45056-387526938
-84,140 Charleston Drive,Closed,219000,2506,1988,3,3,296,39.49977,-84.75504,https://www.xome.com/homes-for-sale/140-Charleston-Drive-Oxford-OH-45056-387526275
-85,811 Clover Circle,Closed,229000,988,1971,3,1,296,39.50153,-84.75377,https://www.xome.com/homes-for-sale/811-Clover-Circle-Oxford-OH-45056-387524921
-86,145 Hunter Woods Drive,Closed,519000,2522,2004,4,3,296,39.5042,-84.76712,https://www.xome.com/homes-for-sale/145-Hunter-Woods-Drive-Oxford-OH-45056-387524771
-87,1460 Dana Drive,Closed,395000,2900,1992,4,4,296,39.49422,-84.7617,https://www.xome.com/homes-for-sale/1460-Dana-Drive-Oxford-OH-45056-387524586
-88,423 W Chestnut Street,Closed,239000,1400,1959,3,2,296,39.50042,-84.75089,https://www.xome.com/homes-for-sale/423-W-Chestnut-Street-Oxford-OH-45056-380802457
-89,213 Morgan Circle,Closed,260000,1256,1998,3,2,298,39.49096,-84.74701,https://www.xome.com/homes-for-sale/213-Morgan-Circle-Oxford-OH-45056-387520587
-90,4686 Booth Road,Closed,169900,1256,1956,3,2,305,39.47871,-84.71213,https://www.xome.com/homes-for-sale/4686-Booth-Road-Oxford-Twp-OH-45056-380497086
-91,513 Edgehill Drive,Closed,245000,1631,1967,3,2,310,39.50129,-84.75177,https://www.xome.com/homes-for-sale/513-Edgehill-Drive-Oxford-OH-45056-387526869
-92,18 Deer Trail Circle,Closed,534000,2698,1996,4,3,310,39.50594,-84.76683,https://www.xome.com/homes-for-sale/18-Deer-Trail-Circle-Oxford-OH-45056-387526326
-93,5600 Booth Road,Closed,429900,2964,,4,4,311,39.48422,-84.73965,https://www.xome.com/homes-for-sale/5600-Booth-Road-Oxford-OH-45056-387531710
-94,60 Charleston Drive,Closed,164300,1100,1982,2,2,311,39.50014,-84.75469,https://www.xome.com/homes-for-sale/60-Charleston-Drive-Oxford-OH-45056-380400881
-95,5115 Bonham Road,Closed,420000,2580,1932,4,3,313,39.52095,-84.72295,https://www.xome.com/homes-for-sale/5115-Bonham-Road-Oxford-Twp-OH-45056-381551028
-96,320 W Vine Street,Closed,339000,2492,1911,4,2,317,39.51397,-84.74796,https://www.xome.com/homes-for-sale/320-W-Vine-Street-Oxford-OH-45056-387526840
-97,121 Country Club Drive,Closed,395000,1920,1978,4,3,317,39.51696,-84.76525,https://www.xome.com/homes-for-sale/121-Country-Club-Drive-Oxford-OH-45056-380251797
-98,111 Acorn Circle,Closed,267700,1925,1979,3,3,319,39.49738,-84.73745,https://www.xome.com/homes-for-sale/111-Acorn-Circle-Oxford-OH-45056-380396506
-99,3685 Oxford Reily Road,Closed,265000,1418,1973,3,2,320,39.48072,-84.76018,https://www.xome.com/homes-for-sale/3685-Oxford-Reily-Road-Oxford-Twp-OH-45056-380312473
-100,6135 Fairfield Road Unit 4,Closed,139000,994,1971,2,1,321,39.50772,-84.75742,https://www.xome.com/homes-for-sale/6135-Fairfield-Road-Unit-4-Oxford-OH-45056-379706115
-101,1615 Sample Road,Closed,275000,1968,1956,4,2,322,39.43147,-84.76154,https://www.xome.com/homes-for-sale/1615-Sample-Road-Reily-Twp-OH-45056-379697482
-102,2438 Oxford Trenton Road,Closed,365000,1672,1977,4,2,324,39.50891,-84.64178,https://www.xome.com/homes-for-sale/2438-Oxford-Trenton-Road-Milford-Twp-OH-45056-387529819
-103,5321 Coulter Lane,Closed,599000,3614,1938,4,4,324,39.51993,-84.72099,https://www.xome.com/homes-for-sale/5321-Coulter-Lane-Oxford-Twp-OH-45056-387526711
-104,33 Jeffrey Circle,Closed,247000,1519,1991,3,2,324,39.5197,-84.74455,https://www.xome.com/homes-for-sale/33-Jeffrey-Circle-Oxford-OH-45056-379683750
-105,104 Beechpoint Drive,Closed,289000,1418,1974,3,2,325,39.50649,-84.70309,https://www.xome.com/homes-for-sale/104-Beechpoint-Drive-Oxford-Twp-OH-45056-379612753
-106,124 Northridge Drive,Closed,210000,1170,2002,3,2,327,39.51791,-84.74679,https://www.xome.com/homes-for-sale/124-Northridge-Drive-Oxford-OH-45056-379544328
-107,4149 Miami Western Drive,Closed,224900,1188,1963,3,2,328,39.4919,-84.72292,https://www.xome.com/homes-for-sale/4149-Miami-Western-Drive-Oxford-Twp-OH-45056-379657853
-108,6104 Fairfield Road,Closed,345000,1889,1943,3,2,328,39.50829,-84.7556,https://www.xome.com/homes-for-sale/6104-Fairfield-Road-Oxford-OH-45056-379582532
-109,3654 Darrtown Road,Closed,1200000,9019,2005,6,7,328,39.48067,-84.6646,https://www.xome.com/homes-for-sale/3654-Darrtown-Road-Oxford-OH-45056-379517796
-110,1803 Scott Road,Closed,256000,806,1940,2,1,330,39.49113,-84.62543,https://www.xome.com/homes-for-sale/1803-Scott-Road-Milford-Twp-OH-45056-379496280
-111,5707 Brown Road,Closed,189970,1146,1965,2,1,331,39.53028,-84.75241,https://www.xome.com/homes-for-sale/5707-Brown-Road-Oxford-Twp-OH-45056-379774152
-112,41 Christopher Drive,Closed,445000,3361,1995,4,4,331,39.52106,-84.74223,https://www.xome.com/homes-for-sale/41-Christopher-Drive-Oxford-OH-45056-379471443
-113,1020 Tollgate Drive,Closed,235000,2044,1972,4,2,333,39.50655,-84.76005,https://www.xome.com/homes-for-sale/1020-Tollgate-Drive-Oxford-OH-45056-379432935
+﻿ID,Address,Status,Listing Price,Square Ft,Year Built,Beds,Baths,Days on Site,Latitude,Longitude,URL,House Image,Google Map Image
+1,212 Morgan Circle,NEW LISTING,300000,1718,1994,3,2,4,39.49118,-84.74771,https://www.xome.com/homes-for-sale/212-Morgan-Circle-Oxford-OH-45056-389749101,https://ap.rdcpix.com/a40cc8a73e669a504a5d06761ff4293dl-b260178635od-w1024_h768_x2.webp?w=828&q=75,https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.0313848335445!2d-84.75027002562332!3d39.49120591145183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403ce1f3d7ddad%3A0xf89cf9a7ef8f0c13!2s212%20Morgan%20Cir%2C%20Oxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1712547450345!5m2!1sen!2sus
+2,6150 Fairfield Road,Active,249900,1234,1960,4,2,48,39.50825,-84.75697,https://www.xome.com/homes-for-sale/6150-Fairfield-Road-Oxford-OH-45056-388346064,https://xomesearch.propertiescdn.com/ListingImages/ohcincy/images/0/0/1794387.jpg?cd=63846958860,
+3,784 High Meadow Lane,Active,375000,1420,1994,3,2,52,39.50042,-84.7668,https://www.xome.com/homes-for-sale/784-High-Meadow-Lane-Oxford-OH-45056-388260299,,
+4,Nichols Road,Pending,324900,1968,1972,2,2,52,39.47126,-84.67455,https://www.xome.com/homes-for-sale/Nichols-Road-Oxford-OH-45056-388244957,,
+5,44 Hidden Creek Drive,Active,529900,3131,1989,4,3,61,39.50612,-84.7691,https://www.xome.com/homes-for-sale/44-Hidden-Creek-Drive-Oxford-OH-45056-387991621,,
+6,125 Ridge Avenue,Active,375000,1688,1958,3,2,68,39.5092,-84.75917,https://www.xome.com/homes-for-sale/125-Ridge-Avenue-Oxford-OH-45056-387881311,,
+7,7040 Contreras Road,Active,739900,2971,2007,4,4,72,39.51937,-84.78475,https://www.xome.com/homes-for-sale/7040-Contreras-Road-Oxford-OH-45056-387764552,,
+8,550 Melissa Drive,Pending,259900,2367,1972,4,2,81,39.49829,-84.75159,https://www.xome.com/homes-for-sale/550-Melissa-Drive-Oxford-OH-45056-387537054,,
+9,4701 Booth Road,Active,290500,1904,1960,4,3,87,39.47821,-84.71242,https://www.xome.com/homes-for-sale/4701-Booth-Road-Oxford-OH-45056-387344500,,
+10,Booth Road,Active,290500,1904,1960,4,3,87,39.47851,-84.71366,https://www.xome.com/homes-for-sale/Booth-Road-Oxford-OH-45056-387540215,,
+11,5176 Westgate Drive,Closed,200000,2192,1961,3,2,101,39.51706,-84.75351,https://www.xome.com/homes-for-sale/5176-Westgate-Drive-Oxford-OH-45056-386979437,,
+12,6135 Fairfield Road Unit 33,Pending,114900,1046,1984,2,2,111,39.50762,-84.75664,https://www.xome.com/homes-for-sale/6135-Fairfield-Road-Unit-33-Oxford-OH-45056-387538530,,
+13,6192 Vereker Drive,Closed,262000,1188,1959,3,2,114,39.50914,-84.75867,https://www.xome.com/homes-for-sale/6192-Vereker-Drive-Oxford-OH-45056-387533427,,
+14,Booth Road,Active,484900,3413,1992,5,4,115,39.47851,-84.71366,https://www.xome.com/homes-for-sale/Booth-Road-Oxford-Twp-OH-45056-387538235,,
+15,5577 Garver Elliott Road,Closed,175000,1413,1984,3,2,115,39.46372,-84.73524,https://www.xome.com/homes-for-sale/5577-Garver-Elliott-Road-Oxford-OH-45056-387538089,,
+16,26 Woodruff Court,Closed,375000,1208,1944,4,2,115,39.51451,-84.74122,https://www.xome.com/homes-for-sale/26-Woodruff-Court-Oxford-OH-45056-387536476,,
+17,113 N Elm Street,Active,787000,2064,1904,8,3,127,39.51219,-84.7469,https://www.xome.com/homes-for-sale/113-N-Elm-Street-Oxford-OH-45056-387534692,,
+18,116 Country Club Drive,Closed,239900,2104,1973,4,3,131,39.51631,-84.76596,https://www.xome.com/homes-for-sale/116-Country-Club-Drive-Oxford-OH-45056-387535444,,
+19,1218 Tollgate Drive,Closed,249000,1722,1968,3,2,138,39.50702,-84.76279,https://www.xome.com/homes-for-sale/1218-Tollgate-Drive-Oxford-OH-45056-387537856,,
+20,102 Stone Creek Drive,Pending,625000,3976,1995,4,5,139,39.51301,-84.76824,https://www.xome.com/homes-for-sale/102-Stone-Creek-Drive-Oxford-OH-45056-385588434,,
+21,Stone Creek Drive,Pending,625000,3976,1995,4,5,139,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387537170,,
+22,3856 Kehr Road,Active,550000,1519,1993,3,2,142,39.48486,-84.74616,https://www.xome.com/homes-for-sale/3856-Kehr-Road-Oxford-OH-45056-385536851,,
+23,Kehr Road,Active,550000,1519,1993,3,2,142,39.48133,-84.7478,https://www.xome.com/homes-for-sale/Kehr-Road-Oxford-Twp-OH-45056-387538686,,
+24,Chestnut Street,Closed,265000,1430,1956,3,3,153,39.5006,-84.74252,https://www.xome.com/homes-for-sale/Chestnut-Street-Oxford-OH-45056-386639919,,
+25,Brookville Road,Closed,315000,2269,2005,4,3,156,39.50054,-84.75963,https://www.xome.com/homes-for-sale/Brookville-Road-Oxford-OH-45056-387532827,,
+26,Heather Ridge Court,Closed,369500,3293,1992,3,3,180,39.50071,-84.76648,https://www.xome.com/homes-for-sale/Heather-Ridge-Court-Oxford-OH-45056-387538893,,
+27,Vereker Drive,Closed,234900,NULL,1987,3,2,181,39.50887,-84.75296,https://www.xome.com/homes-for-sale/Vereker-Drive-Oxford-OH-45056-387538638,,
+28,Main Street,Closed,39000,1200,1930,3,1,181,39.48829,-84.65376,https://www.xome.com/homes-for-sale/Main-Street-Reily-Twp-OH-45056-387531092,,
+29,735 High Meadow Lane,Closed,390000,2558,1991,3,3,184,39.50073,-84.76517,https://www.xome.com/homes-for-sale/735-High-Meadow-Lane-Oxford-OH-45056-387531373,,
+30,Chestnut Street,Closed,255000,1305,1966,3,3,184,39.5006,-84.74252,https://www.xome.com/homes-for-sale/Chestnut-Street-Oxford-OH-45056-387531241,,
+31,Imhoff Road,Closed,789900,2317,2006,3,3,185,39.47161,-84.76916,https://www.xome.com/homes-for-sale/Imhoff-Road-Reily-Twp-OH-45056-387536866,,
+32,14 Quail Ridge Drive,Closed,300000,NULL,1984,4,3,188,39.50043,-84.76386,https://www.xome.com/homes-for-sale/14-Quail-Ridge-Drive-Oxford-OH-45056-387531423,,
+33,430 Bouden Lane,Closed,295000,NULL,1948,4,2,192,39.51616,-84.73701,https://www.xome.com/homes-for-sale/430-Bouden-Lane-Oxford-OH-45056-387531098,,
+34,Dufour Lane,Closed,389900,2534,2016,4,3,193,39.5228,-84.75447,https://www.xome.com/homes-for-sale/Dufour-Lane-Oxford-OH-45056-387533674,,
+35,Honor Lane,Closed,384900,2437,2005,4,3,194,39.52212,-84.75291,https://www.xome.com/homes-for-sale/Honor-Lane-Oxford-OH-45056-387531640,,
+36,Fairfield Road,Closed,695000,NULL,1963,4,5,195,39.50748,-84.74966,https://www.xome.com/homes-for-sale/Fairfield-Road-Oxford-OH-45056-387531532,,
+37,7798 Dunwoody Road,Closed,589900,NULL,1999,3,4,198,39.40665,-84.80738,https://www.xome.com/homes-for-sale/7798-Dunwoody-Road-Oxford-OH-45056-387536547,,
+38,Gardenia Drive,Closed,319000,NULL,2010,3,4,198,39.49371,-84.7459,https://www.xome.com/homes-for-sale/Gardenia-Drive-Oxford-OH-45056-387532894,,
+39,Stephenson Road,Closed,419900,2106,1979,4,3,199,39.46389,-84.70142,https://www.xome.com/homes-for-sale/Stephenson-Road-Reily-Twp-OH-45056-387538289,,
+40,Stone Creek Drive,Closed,850000,4848,1992,5,4,200,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387535020,,
+41,Stone Creek Drive,Closed,675000,3345,1993,3,3,205,39.51254,-84.76867,https://www.xome.com/homes-for-sale/Stone-Creek-Drive-Oxford-OH-45056-387533225,,
+42,843 Dufour Lane,Closed,420000,2500,2006,3,4,209,39.52042,-84.75484,https://www.xome.com/homes-for-sale/843-Dufour-Lane-Oxford-OH-45056-385192183,,
+43,111 Marti Court,Closed,242500,1288,1981,3,2,219,39.51162,-84.75301,https://www.xome.com/homes-for-sale/111-Marti-Court-Oxford-OH-45056-387512149,,
+44,4333 Main Street,Closed,224000,1824,1880,4,2,220,39.49673,-84.66219,https://www.xome.com/homes-for-sale/4333-Main-Street-Oxford-OH-45056-387531849,,
+45,2275 Oxford Trenton Road,Closed,375000,1740,1978,3,2,220,39.50866,-84.63396,https://www.xome.com/homes-for-sale/2275-Oxford-Trenton-Road-Oxford-OH-45056-383125130,,
+46,2727 Oxford Trenton Road,Closed,425000,2628,1999,5,5,226,39.5075,-84.65149,https://www.xome.com/homes-for-sale/2727-Oxford-Trenton-Road-Milford-Twp-OH-45056-382896419,,
+47,134 Pin Oak Drive,Closed,315000,2384,1964,4,3,229,39.51347,-84.7584,https://www.xome.com/homes-for-sale/134-Pin-Oak-Drive-Oxford-OH-45056-387523419,,
+48,1858 Reily Woods Lane,Closed,409000,2002,2003,4,3,234,39.43693,-84.72575,https://www.xome.com/homes-for-sale/1858-Reily-Woods-Lane-Reily-Twp-OH-45056-387511974,,
+49,435 Emerald Woods Drive,Closed,440000,2595,1973,3,2,237,39.50373,-84.7579,https://www.xome.com/homes-for-sale/435-Emerald-Woods-Drive-Oxford-OH-45056-387521617,,
+50,4620 Stephenson Road,Closed,353000,1760,1958,4,2,240,39.46412,-84.70827,https://www.xome.com/homes-for-sale/4620-Stephenson-Road-Reily-Twp-OH-45056-387521494,,
+51,923 Tollgate Drive,Closed,225000,1326,1975,3,2,245,39.50603,-84.75726,https://www.xome.com/homes-for-sale/923-Tollgate-Drive-Oxford-OH-45056-387511706,,
+52,3269 Shollenbarger Road,Closed,245000,1066,1979,3,2,253,39.49437,-84.66724,https://www.xome.com/homes-for-sale/3269-Shollenbarger-Road-Milford-Twp-OH-45056-387520699,,
+53,Contreras Road,Active,739900,2971,2007,4,4,254,39.51057,-84.75027,https://www.xome.com/homes-for-sale/Contreras-Road-Oxford-Twp-OH-45056-387538550,,
+54,309 Erickson Drive,Closed,305000,2128,1970,3,3,254,39.50746,-84.7607,https://www.xome.com/homes-for-sale/309-Erickson-Drive-Oxford-OH-45056-387525972,,
+55,7178 Ringwood Road,Closed,475000,1966,2006,3,3,254,39.53165,-84.78857,https://www.xome.com/homes-for-sale/7178-Ringwood-Road-Oxford-Twp-OH-45056-387520698,,
+56,2660 Indian Creek Road,Closed,330000,2036,1997,4,3,257,39.45676,-84.77836,https://www.xome.com/homes-for-sale/2660-Indian-Creek-Road-Reily-Twp-OH-45056-387520764,,
+57,949 Silvoor Lane,Closed,500000,5432,1951,5,4,261,39.49835,-84.73383,https://www.xome.com/homes-for-sale/949-Silvoor-Lane-Oxford-OH-45056-387520668,,
+58,7 W Chestnut Street,Closed,302500,1664,2006,4,2,261,39.50032,-84.7431,https://www.xome.com/homes-for-sale/7-W-Chestnut-Street-Oxford-OH-45056-387520666,,
+59,3525 Ward Way,Closed,518000,3494,2005,4,4,261,39.47719,-84.70252,https://www.xome.com/homes-for-sale/3525-Ward-Way-Hanover-Twp-OH-45056-381906425,,
+60,109 Lantern Ridge Road,Closed,450000,1705,2003,4,3,263,39.50212,-84.76966,https://www.xome.com/homes-for-sale/109-Lantern-Ridge-Road-Oxford-OH-45056-381942905,,
+61,549 Melissa Drive,Closed,225000,1398,1981,2,2,265,39.49787,-84.75167,https://www.xome.com/homes-for-sale/549-Melissa-Drive-Oxford-OH-45056-387525908,,
+62,3504 Ward Way,Closed,460000,3762,2008,4,4,267,39.47662,-84.70053,https://www.xome.com/homes-for-sale/3504-Ward-Way-Hanover-Twp-OH-45056-383162487,,
+63,150 Prevalent Drive,Closed,375000,3084,1995,4,4,275,39.516,-84.76917,https://www.xome.com/homes-for-sale/150-Prevalent-Drive-Oxford-OH-45056-387526505,,
+64,Indian Ridge Woods Drive,Pending,730000,6635,2001,5,6,275,39.46375,-84.68518,https://www.xome.com/homes-for-sale/Indian-Ridge-Woods-Drive-Hanover-Twp-OH-45056-383175492,,
+65,5407 Hester Road,Closed,150000,1254,2003,2,2,277,39.52036,-84.75742,https://www.xome.com/homes-for-sale/5407-Hester-Road-Oxford-OH-45056-387526224,,
+66,602 Melissa Drive,Closed,250000,1480,1967,3,3,277,39.49841,-84.75295,https://www.xome.com/homes-for-sale/602-Melissa-Drive-Oxford-OH-45056-387521429,,
+67,5470 Brown Road,Closed,625000,3216,1999,6,4,277,39.5234,-84.74293,https://www.xome.com/homes-for-sale/5470-Brown-Road-Oxford-Twp-OH-45056-381399670,,
+68,1653 Oxford Trenton Road,Closed,449900,1845,1989,3,2,278,39.50989,-84.61662,https://www.xome.com/homes-for-sale/1653-Oxford-Trenton-Road-Milford-Twp-OH-45056-381517993,,
+69,117 W Church Street,Closed,700000,2006,1914,4,3,279,39.51134,-84.74498,https://www.xome.com/homes-for-sale/117-W-Church-Street-Oxford-OH-45056-387512195,,
+70,260 Northridge Drive,Closed,499999,2313,1997,4,4,279,39.52183,-84.75205,https://www.xome.com/homes-for-sale/260-Northridge-Drive-Oxford-OH-45056-381557988,,
+71,590 Honor Lane,Closed,399900,2896,2005,4,4,282,39.52214,-84.7526,https://www.xome.com/homes-for-sale/590-Honor-Lane-Oxford-OH-45056-387525097,,
+72,4786 Booth Road,Closed,335000,1915,1990,3,2,283,39.47888,-84.71509,https://www.xome.com/homes-for-sale/4786-Booth-Road-Oxford-Twp-OH-45056-387524847,,
+73,Sycamore Street,Closed,298000,1882,1983,4,3,283,39.51511,-84.74152,https://www.xome.com/homes-for-sale/Sycamore-Street-Oxford-OH-45056-381663741,,
+74,111 Gardenia Drive,Closed,347900,2292,2007,4,3,283,39.49344,-84.74307,https://www.xome.com/homes-for-sale/111-Gardenia-Drive-Oxford-OH-45056-381496256,,
+75,6340 Brown Road,Closed,793000,3952,1972,5,3,284,39.54573,-84.74644,https://www.xome.com/homes-for-sale/6340-Brown-Road-Oxford-Twp-OH-45056-387525664,,
+76,6043 Vereker Drive,Closed,259000,1406,1987,3,2,284,39.50865,-84.75497,https://www.xome.com/homes-for-sale/6043-Vereker-Drive-Oxford-OH-45056-382040191,,
+77,7524 Stillwell Beckett Road,Closed,399900,2196,1989,3,3,284,39.48994,-84.80075,https://www.xome.com/homes-for-sale/7524-Stillwell-Beckett-Road-Oxford-Twp-OH-45056-381155163,,
+78,6215 Stillwell Beckett Road,Closed,249900,1628,1967,4,2,285,39.47911,-84.75999,https://www.xome.com/homes-for-sale/6215-Stillwell-Beckett-Road-Oxford-Twp-OH-45056-387523926,,
+79,623 Brill Drive,Closed,185000,1025,1974,3,1,287,39.50297,-84.75432,https://www.xome.com/homes-for-sale/623-Brill-Drive-Oxford-OH-45056-381077386,,
+80,502 White Oak Drive,Closed,399900,2380,1981,4,3,289,39.50251,-84.76366,https://www.xome.com/homes-for-sale/502-White-Oak-Drive-Oxford-OH-45056-387526453,,
+81,170 Hilltop Road,Closed,419000,2330,1957,3,4,290,39.51391,-84.75477,https://www.xome.com/homes-for-sale/170-Hilltop-Road-Oxford-OH-45056-387525685,,
+82,619 Brill Drive,Closed,189900,1025,1974,3,1,292,39.50297,-84.75407,https://www.xome.com/homes-for-sale/619-Brill-Drive-Oxford-OH-45056-387526210,,
+83,3886 Lanes Mill Road,Closed,199900,1920,1960,3,2,296,39.48582,-84.68719,https://www.xome.com/homes-for-sale/3886-Lanes-Mill-Road-Oxford-OH-45056-387526938,,
+84,140 Charleston Drive,Closed,219000,2506,1988,3,3,296,39.49977,-84.75504,https://www.xome.com/homes-for-sale/140-Charleston-Drive-Oxford-OH-45056-387526275,,
+85,811 Clover Circle,Closed,229000,988,1971,3,1,296,39.50153,-84.75377,https://www.xome.com/homes-for-sale/811-Clover-Circle-Oxford-OH-45056-387524921,,
+86,145 Hunter Woods Drive,Closed,519000,2522,2004,4,3,296,39.5042,-84.76712,https://www.xome.com/homes-for-sale/145-Hunter-Woods-Drive-Oxford-OH-45056-387524771,,
+87,1460 Dana Drive,Closed,395000,2900,1992,4,4,296,39.49422,-84.7617,https://www.xome.com/homes-for-sale/1460-Dana-Drive-Oxford-OH-45056-387524586,,
+88,423 W Chestnut Street,Closed,239000,1400,1959,3,2,296,39.50042,-84.75089,https://www.xome.com/homes-for-sale/423-W-Chestnut-Street-Oxford-OH-45056-380802457,,
+89,213 Morgan Circle,Closed,260000,1256,1998,3,2,298,39.49096,-84.74701,https://www.xome.com/homes-for-sale/213-Morgan-Circle-Oxford-OH-45056-387520587,,
+90,4686 Booth Road,Closed,169900,1256,1956,3,2,305,39.47871,-84.71213,https://www.xome.com/homes-for-sale/4686-Booth-Road-Oxford-Twp-OH-45056-380497086,,
+91,513 Edgehill Drive,Closed,245000,1631,1967,3,2,310,39.50129,-84.75177,https://www.xome.com/homes-for-sale/513-Edgehill-Drive-Oxford-OH-45056-387526869,,
+92,18 Deer Trail Circle,Closed,534000,2698,1996,4,3,310,39.50594,-84.76683,https://www.xome.com/homes-for-sale/18-Deer-Trail-Circle-Oxford-OH-45056-387526326,,
+93,5600 Booth Road,Closed,429900,2964,NULL,4,4,311,39.48422,-84.73965,https://www.xome.com/homes-for-sale/5600-Booth-Road-Oxford-OH-45056-387531710,,
+94,60 Charleston Drive,Closed,164300,1100,1982,2,2,311,39.50014,-84.75469,https://www.xome.com/homes-for-sale/60-Charleston-Drive-Oxford-OH-45056-380400881,,
+95,5115 Bonham Road,Closed,420000,2580,1932,4,3,313,39.52095,-84.72295,https://www.xome.com/homes-for-sale/5115-Bonham-Road-Oxford-Twp-OH-45056-381551028,,
+96,320 W Vine Street,Closed,339000,2492,1911,4,2,317,39.51397,-84.74796,https://www.xome.com/homes-for-sale/320-W-Vine-Street-Oxford-OH-45056-387526840,,
+97,121 Country Club Drive,Closed,395000,1920,1978,4,3,317,39.51696,-84.76525,https://www.xome.com/homes-for-sale/121-Country-Club-Drive-Oxford-OH-45056-380251797,,
+98,111 Acorn Circle,Closed,267700,1925,1979,3,3,319,39.49738,-84.73745,https://www.xome.com/homes-for-sale/111-Acorn-Circle-Oxford-OH-45056-380396506,,
+99,3685 Oxford Reily Road,Closed,265000,1418,1973,3,2,320,39.48072,-84.76018,https://www.xome.com/homes-for-sale/3685-Oxford-Reily-Road-Oxford-Twp-OH-45056-380312473,,
+100,6135 Fairfield Road Unit 4,Closed,139000,994,1971,2,1,321,39.50772,-84.75742,https://www.xome.com/homes-for-sale/6135-Fairfield-Road-Unit-4-Oxford-OH-45056-379706115,,
+101,1615 Sample Road,Closed,275000,1968,1956,4,2,322,39.43147,-84.76154,https://www.xome.com/homes-for-sale/1615-Sample-Road-Reily-Twp-OH-45056-379697482,,
+102,2438 Oxford Trenton Road,Closed,365000,1672,1977,4,2,324,39.50891,-84.64178,https://www.xome.com/homes-for-sale/2438-Oxford-Trenton-Road-Milford-Twp-OH-45056-387529819,,
+103,5321 Coulter Lane,Closed,599000,3614,1938,4,4,324,39.51993,-84.72099,https://www.xome.com/homes-for-sale/5321-Coulter-Lane-Oxford-Twp-OH-45056-387526711,,
+104,33 Jeffrey Circle,Closed,247000,1519,1991,3,2,324,39.5197,-84.74455,https://www.xome.com/homes-for-sale/33-Jeffrey-Circle-Oxford-OH-45056-379683750,,
+105,104 Beechpoint Drive,Closed,289000,1418,1974,3,2,325,39.50649,-84.70309,https://www.xome.com/homes-for-sale/104-Beechpoint-Drive-Oxford-Twp-OH-45056-379612753,,
+106,124 Northridge Drive,Closed,210000,1170,2002,3,2,327,39.51791,-84.74679,https://www.xome.com/homes-for-sale/124-Northridge-Drive-Oxford-OH-45056-379544328,,
+107,4149 Miami Western Drive,Closed,224900,1188,1963,3,2,328,39.4919,-84.72292,https://www.xome.com/homes-for-sale/4149-Miami-Western-Drive-Oxford-Twp-OH-45056-379657853,,
+108,6104 Fairfield Road,Closed,345000,1889,1943,3,2,328,39.50829,-84.7556,https://www.xome.com/homes-for-sale/6104-Fairfield-Road-Oxford-OH-45056-379582532,,
+109,3654 Darrtown Road,Closed,1200000,9019,2005,6,7,328,39.48067,-84.6646,https://www.xome.com/homes-for-sale/3654-Darrtown-Road-Oxford-OH-45056-379517796,,
+110,1803 Scott Road,Closed,256000,806,1940,2,1,330,39.49113,-84.62543,https://www.xome.com/homes-for-sale/1803-Scott-Road-Milford-Twp-OH-45056-379496280,,
+111,5707 Brown Road,Closed,189970,1146,1965,2,1,331,39.53028,-84.75241,https://www.xome.com/homes-for-sale/5707-Brown-Road-Oxford-Twp-OH-45056-379774152,,
+112,41 Christopher Drive,Closed,445000,3361,1995,4,4,331,39.52106,-84.74223,https://www.xome.com/homes-for-sale/41-Christopher-Drive-Oxford-OH-45056-379471443,,
+113,1020 Tollgate Drive,Closed,235000,2044,1972,4,2,333,39.50655,-84.76005,https://www.xome.com/homes-for-sale/1020-Tollgate-Drive-Oxford-OH-45056-379432935,,

@@ -11,25 +11,40 @@
 </head>
 
 <body>
-    <h1>Results:</h1>
-    <p>Found {{ results_count }} items matching your search criteria.</p>
-    <ul>
-        {% for item in results %}
-        <li>
-            <p><strong>{{ item['Address'] }}</strong></p>
-            <p>Status: {{ item['Status'] }}</p>
-            <p>Listing Price: ${{ item['Listing Price'] }}</p>
-            <p>Square Feet: {{ item['Square Ft'] }} sqft</p>
-            <p>Year Built: {{ item['Year Built'] }}</p>
-            <p>Beds: {{ item['Beds'] }}</p>
-            <p>Baths: {{ item['Baths'] }}</p>
-            <p>Days on Site: {{ item['Days on Site'] }}</p>
-            <p><a href="{{ item['URL'] }}">View Listing</a></p>
-        </li>
-        {% else %}
-        <li>No items found below this price.</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <h1>Results:</h1>
+        <p>Found {{ results_count }} items matching your search criteria.</p>
+        <ul>
+            {% for item in results %}
+            <li class="row">
+                <div class="col-md-4">
+                    <img src="{{ item['House Image'] }}">
+                </div>
+                <div class="col-md-4">
+                    <p><strong>{{ item['Address'] }}</strong></p>
+                    <p>Status: {{ item['Status'] }}</p>
+                    <p>Listing Price: ${{ item['Listing Price'] }}</p>
+                    <p>Square Feet: {{ item['Square Ft'] }} sqft</p>
+                    <p>Year Built: {{ item['Year Built'] }}</p>
+                    <p>Beds: {{ item['Beds'] }}</p>
+                    <p>Baths: {{ item['Baths'] }}</p>
+                    <p>Days on Site: {{ item['Days on Site'] }}</p>
+                    <p><a href="{{ item['URL'] }}">View Listing</a></p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="{{ item['Google Map Image'] }}"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </li>
+            {% else %}
+            <li>No items found below this price.</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 
 </html>
