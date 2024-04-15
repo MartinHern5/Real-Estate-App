@@ -8,6 +8,21 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
     <title>Search Results</title>
+    <style>
+        .custom-checkbox input[type="checkbox"] {
+            display: none; /* Hide the default checkbox */
+        }
+
+        .custom-checkbox .star {
+            font-size: 20px; /* Adjust the size of the star */
+            color: grey; /* Color of the star */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+        .custom-checkbox input[type="checkbox"]:checked + .star {
+            color: #ffcc00; /* Color of the star when checkbox is checked */
+        }
+    </style>
 </head>
 
 <body>
@@ -47,7 +62,11 @@
                     <img src="{{ item['House Image'] }}">
                 </div>
                 <div class="col-md-4">
-                    <p><strong>{{ item['Address'] }}</strong></p>
+                    <label><strong>{{ item['Address'] }}</strong></label>
+                    <label for="{{ item['ID'] }}" class="custom-checkbox">
+                        <input type="checkbox" id="{{ item['ID'] }}">
+                        <span class="star">&#9733;</span>
+                    </label>
                     <p>Status: {{ item['Status'] }}</p>
                     <p>Listing Price: ${{ item['Listing Price'] }}</p>
                     <p>Square Feet: {{ item['Square Ft'] }} sqft</p>
