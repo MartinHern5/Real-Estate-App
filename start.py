@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
 
@@ -14,6 +14,7 @@ class Login(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
+    favorites = db.Column(db.String, nullable=True)
     
 @app.route('/')
 def start():
@@ -26,6 +27,7 @@ def login():
         password = request.form['password']
         user = Login.query.filter_by(username=username, password=password).first()
         if user:
+            session['username'] = username
             return redirect(url_for('home', username=username))
         else:
             flash('Invalid username or password. Please try again.')
@@ -91,5 +93,52 @@ def search():
         return render_template('search.html', results=results, results_count=results_count)
     return redirect(url_for('home'))
 
+@app.route('/addToFav', methods=['POST'])
+def addToFav():
+    if request.method == 'POST':
+        # Retrieve the ID of the property from the form data
+        property_id = request.form.get('property_id')
+        
+        # Retrieves username
+        username = session.get('username')
+        
+        # Find the user in the database
+        user = Login.query.filter_by(username=username).first()
+        
+        if user:
+            # Retrieve the existing favorites string or initialize it if it's None
+            favorites = user.favorites or ''
+            
+            #if property_id not in favorites:
+            favorites += property_id + ','
+            
+            # Update the favorites column in the database
+            user.favorites = favorites
+            db.session.commit()
+            return '',204
+        else:
+            return '',400
+
+@app.route('/favorites')
+def favorites():
+    # Get the username from the session
+    username = session.get('username')
+    
+    user = Login.query.filter_by(username=username).first()
+        
+    if user:
+        # Split the favorites string into a list of property IDs
+        favorite_ids = user.favorites.split(',') if user.favorites else []
+        
+        # Query the database to get the details of the favorite properties
+        favorite_properties = []
+        property_data = pd.read_csv(CSV_FILE)
+        for property_id in favorite_ids:
+            if property_id:
+                property_data = property_data[property_data['ID'] == int(property_id)]
+                if not property_data.empty:
+                    favorite_properties.append(property_data.to_dict(orient='records'))
+        
+        return render_template('favorites.html', favorite_properties=favorite_properties)
 if __name__ == '__main__':
     app.run(debug=True)

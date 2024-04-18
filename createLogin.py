@@ -12,11 +12,12 @@ class Login(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
+    favorites = db.Column(db.String, nullable=True)
 
 with app.app_context():
     db.create_all()
     if not Login.query.filter_by(username='admin').first():
-        admin_user = Login(username='admin', password='1234')
+        admin_user = Login(username='admin', password='1234', favorites='')
         db.session.add(admin_user)
         db.session.commit()
 '''
