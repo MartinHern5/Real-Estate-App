@@ -13,14 +13,14 @@
             display: none; /* Hide the default checkbox */
         }
 
-        .custom-checkbox .star {
-            font-size: 20px; /* Adjust the size of the star */
-            color: grey; /* Color of the star */
+        .custom-checkbox .plus {
+            font-size: 20px; /* Adjust the size of the plus sign */
+            color: black; /* Color of the plus sign */
             cursor: pointer; /* Show pointer cursor on hover */
         }
 
-        .custom-checkbox input[type="checkbox"]:checked + .star {
-            color: #ffcc00; /* Color of the star when checkbox is checked */
+        .custom-checkbox input[type="checkbox"]:checked + .plus {
+            color: grey; /* Color of the plus sign should not change when checkbox is checked */
         }
     </style>
 </head>
@@ -65,7 +65,7 @@
                     <label><strong>{{ item['Address'] }}</strong></label>
                     <label for="{{ item['ID'] }}" class="custom-checkbox">
                         <input type="checkbox" id="{{ item['ID'] }}">
-                        <span class="star">&#9733;</span>
+                        <span class="plus">+</span>
                     </label>
                     <p>Status: {{ item['Status'] }}</p>
                     <p>Listing Price: ${{ item['Listing Price'] }}</p>
