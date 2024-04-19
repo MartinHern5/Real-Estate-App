@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
+import random
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yoursecretkey'
@@ -28,7 +29,7 @@ def login():
         user = Login.query.filter_by(username=username, password=password).first()
         if user:
             session['username'] = username
-            return redirect(url_for('home', username=username))
+            return redirect(url_for('home'))
         else:
             flash('Invalid username or password. Please try again.')
             return redirect(url_for('login'))
@@ -36,8 +37,26 @@ def login():
 
 @app.route('/home')
 def home():
-    username = request.args.get('username')
-    return render_template('home.html', username=username)
+    username = session.get('username')
+    
+    # Generate an array with 5 random numbers between 1 and 100
+    # Set to store unique random numbers
+    random_numbers_set = set()
+
+    # Generate unique random numbers until the set contains 5 elements
+    while len(random_numbers_set) < 5:
+        random_numbers_set.add(random.randint(1, 100))
+    # Convert the set to a list
+    random_id = list(random_numbers_set)
+    
+    random_properties = []
+    property_data = pd.read_csv(CSV_FILE)
+    for property_id in random_id:
+        filtered_data = property_data[property_data['ID'] == int(property_id)]
+        if not filtered_data.empty:  # Check if any property matches the ID
+            random_properties.extend(filtered_data.to_dict(orient='records'))
+    
+    return render_template('home.html', username=username, random_properties=random_properties)
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -172,9 +191,7 @@ def favorites():
         
     if user:
         # Split the favorites string into a list of property IDs
-        print(user.favorites)
         favorite_ids = user.favorites.split(',') if user.favorites else []
-        print(favorite_ids)
         
         # Query the database to get the details of the favorite properties
         favorite_properties = []

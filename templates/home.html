@@ -7,6 +7,26 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
     <title>Home</title>
+    <style>
+        .custom-checkbox input[type="checkbox"] {
+            display: none; /* Hide the default checkbox */
+        }
+
+        .custom-checkbox .plus {
+            font-size: 20px; /* Adjust the size of the plus sign */
+            color: black; /* Color of the plus sign */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+        .custom-checkbox input[type="checkbox"]:checked + .plus {
+            color: grey; /* Color of the plus sign should not change when checkbox is checked */
+        }
+    </style>
+    <script>
+        function submitForm() {
+            document.getElementById("searchForm").submit(); // Submit the form
+        }
+    </script>
 </head>
 
 <body>
@@ -139,9 +159,45 @@
             <div class="form-row">
                 <label for="advanceSearch">Advanced Search:</label>
                 <input type="text" class="form-control" id="advanceSearch" name="advanceSearch" placeholder="Search">
+                <button type="submit" class="btn btn-primary">Search</button>
             </div>
+        </form>
 
-            <button type="submit" class="btn btn-primary">Search</button>
+        <form id="searchForm" action="/addToFav" method="post">
+            <ul>
+                {% for property in random_properties %}
+                <li class="row">
+                    <div class="col-md-4">
+                        <img src="{{ property['House Image'] }}">
+                    </div>
+                    <div class="col-md-4">
+                        <label><strong>{{ property['Address'] }}</strong></label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="{{ property['ID'] }}" name="property_id" onchange="submitForm()">
+                            <span class="plus">+</span>
+                        </label>
+                        <p>Status: {{ property['Status'] }}</p>
+                        <p>Listing Price: ${{ property['Listing Price'] }}</p>
+                        <p>Square Feet: {{ property['Square Ft'] }} sqft</p>
+                        <p>Year Built: {{ property['Year Built'] }}</p>
+                        <p>Beds: {{ property['Beds'] }}</p>
+                        <p>Baths: {{ property['Baths'] }}</p>
+                        <p>Days on Site: {{ property['Days on Site'] }}</p>
+                        <p><a href="{{ property['URL'] }}">View Listing</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe src="{{ property['Google Map Image'] }}"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </li>
+                {% else %}
+                <li>No property added.</li>
+                {% endfor %}
+            </ul>
         </form>
     </div>
 </body>
