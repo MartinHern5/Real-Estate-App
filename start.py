@@ -99,7 +99,7 @@ def addToFav():
         # Retrieve the ID of the property from the form data
         property_id = request.form.get('property_id')
         
-        # Retrieves username
+        # Retrieve the username from the session
         username = session.get('username')
         
         # Find the user in the database
@@ -109,15 +109,59 @@ def addToFav():
             # Retrieve the existing favorites string or initialize it if it's None
             favorites = user.favorites or ''
             
-            #if property_id not in favorites:
-            favorites += property_id + ','
+            # Split the favorites string into a list of property IDs
+            favorite_ids = favorites.split(',') if favorites else []
             
-            # Update the favorites column in the database
-            user.favorites = favorites
-            db.session.commit()
-            return '',204
+            # Check if the property ID is already in the favorites
+            if property_id not in favorite_ids:
+                # Add the property ID to the favorites string
+                favorites += property_id + ','
+                
+                # Update the favorites column in the database
+                user.favorites = favorites
+                db.session.commit()
+                return '', 204  # Success response
+            else:
+                return '', 204 # Already Exist Change so it makes msg
         else:
-            return '',400
+            return '', 400  # User not found
+        
+@app.route('/removeFromFav', methods=['POST'])
+def removeFromFav():
+    if request.method == 'POST':
+        # Retrieve the ID of the property from the form data
+        property_id = request.form.get('property_id')
+        
+        # Retrieve the username from the session
+        username = session.get('username')
+        
+        # Find the user in the database
+        user = Login.query.filter_by(username=username).first()
+        
+        if user:
+            # Retrieve the existing favorites string or initialize it if it's None
+            favorites = user.favorites or ''
+            
+            # Split the favorites string into a list of property IDs
+            favorite_ids = favorites.split(',') if favorites else []
+            
+            # Check if the property ID is in the list of favorites
+            if property_id in favorite_ids:
+                # Remove the property ID from the list of favorites
+                favorite_ids.remove(property_id)
+                
+                # Join the remaining favorite IDs back into a string
+                favorites = ','.join(favorite_ids)
+                
+                # Update the favorites column in the database
+                user.favorites = favorites
+                db.session.commit()
+                
+                return redirect(url_for('favorites'))
+            else:
+                return '', 204 # Not reachable
+        else:
+            return '', 400  # Not reachable
 
 @app.route('/favorites')
 def favorites():
@@ -128,16 +172,18 @@ def favorites():
         
     if user:
         # Split the favorites string into a list of property IDs
+        print(user.favorites)
         favorite_ids = user.favorites.split(',') if user.favorites else []
+        print(favorite_ids)
         
         # Query the database to get the details of the favorite properties
         favorite_properties = []
         property_data = pd.read_csv(CSV_FILE)
         for property_id in favorite_ids:
-            if property_id:
-                property_data = property_data[property_data['ID'] == int(property_id)]
-                if not property_data.empty:
-                    favorite_properties.append(property_data.to_dict(orient='records'))
+            if property_id.isdigit():
+                filtered_data = property_data[property_data['ID'] == int(property_id)]
+                if not filtered_data.empty:  # Check if any property matches the ID
+                    favorite_properties.extend(filtered_data.to_dict(orient='records'))
         
         return render_template('favorites.html', favorite_properties=favorite_properties)
 if __name__ == '__main__':
