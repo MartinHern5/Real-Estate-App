@@ -13,7 +13,7 @@
       <div class="button-box">
         <div id="btn"></div>
         <button type="button" class="toggle-btn" onclick="login()">Login</button>
-        <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+        <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
       </div>
       {% with messages = get_flashed_messages() %}
       {% if messages %}
@@ -29,7 +29,7 @@
         <input type="submit" class="submit-btn" value="Login">
       </form>
 
-      <form id="register" class="input-group" action="/register" method="post">
+      <form id="signup" class="input-group" action="/signup" method="post">
         <input type="text" class="input-field" placeholder="Username" required>
         <input type="text" class="input-field" placeholder="Password" required>
         <input type="text" class="input-field" placeholder="Re-Type Password" required>
@@ -41,10 +41,10 @@
 
   <script>
     var x = document.getElementById("login");
-    var y = document.getElementById("register");
+    var y = document.getElementById("signup");
     var z = document.getElementById("btn");
 
-    function register() {
+    function signup() {
       x.style.left = "-400px";
       y.style.left = "50px";
       z.style.left = "110px";
