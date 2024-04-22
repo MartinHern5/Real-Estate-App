@@ -3,6 +3,10 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 h1 {
@@ -69,6 +73,15 @@ img {
 iframe {
     height: 300px;
     width: 300px;
+}
+
+.outlined-text {
+    color: #000;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white; 
 }
 
 .navbar-brand img {
