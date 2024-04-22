@@ -203,5 +203,9 @@ def favorites():
                     favorite_properties.extend(filtered_data.to_dict(orient='records'))
         
         return render_template('favorites.html', favorite_properties=favorite_properties)
+    
+@app.route('/settings', methods=['GET', 'POST'])
+def settings():
+    return render_template('settings.html')
 if __name__ == '__main__':
     app.run(debug=True)
