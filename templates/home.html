@@ -47,7 +47,7 @@
                     <a class="nav-link" href="./favorites">Favorites</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Settings</a>
+                    <a class="nav-link" href="./settings">Settings</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./login">Logout</a>
@@ -55,7 +55,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container mt-5">
+    <div class="container mt-5" id="homeForm">
         <h1 class="outlined-text">Welcome "Home"!</h1>
         <p class="outlined-text">Congratulations, {{ username }}! You have successfully logged in.</p>
 
@@ -162,7 +162,9 @@
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
+    </div>
 
+    <div class="container mt-5">
         <form id="searchForm" action="/addToFav" method="post">
             <ul>
                 {% for property in random_properties %}

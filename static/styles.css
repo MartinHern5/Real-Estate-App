@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+}
+
+#homeForm{
     background-image: url("https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -76,12 +79,12 @@ iframe {
 }
 
 .outlined-text {
-    color: #000;
+    color:  white;
     text-shadow: 
-        -1px -1px 0 white,  
-         1px -1px 0 white,
-        -1px  1px 0 white,
-         1px  1px 0 white; 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
 }
 
 .navbar-brand img {
