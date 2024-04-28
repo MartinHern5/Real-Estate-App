@@ -35,6 +35,28 @@ def login():
             return redirect(url_for('login'))
     return render_template('login.html')
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    
+    if request.method == 'POST':
+        username = request.form['username']
+        password1 = request.form['password1']
+        password2 = request.form['password2']
+        
+        if not Login.query.filter_by(username=username).first():
+            new_user = Login(username=username, password=password1, favorites='')
+            db.session.add(new_user)
+            db.session.commit()
+            print("It WORKS!")
+        elif password1 != password2:
+            flash('Passwords are not the same. Please try again.')
+            return redirect(url_for('login'))
+        else: 
+            flash('Username already taken. Please try again.')
+            return redirect(url_for('login'))
+        
+    return render_template('login.html')
+
 @app.route('/home')
 def home():
     username = session.get('username')
