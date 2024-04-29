@@ -1,5 +1,35 @@
 # Real Estate App
+A flask web application for a platform pertaining to the real estate market in Oxford, OH. This application allows the user to
+search for properties based on various criteria such as: Listing price, Square feet, the year the establishment was built, number
+of beds, number of baths, and number of days on site. This application also provides the user with a favorites page to add any properties
+that may catch their eye as well as a sign up page to create an account and manage the properties they wish to view further. 
 
+Features:
+- User Authentication (both login and sign up)
+- Property search which includes various filters 
+- Advanced search based on address of property
+- Favorites page which includes adding and removing
+- View favorites
+- Profile settings
+
+Installation:
+- clone the repository
+- Navigate to project directory
+- create python environment: using these
+    - python -m venv env
+    - source env/bin/activate  # On Windows, use `env\Scripts\activate`
+- install dependencies: flask and sqlalchemy
+    - pip install flask
+    - pip install flask_sqlalchemy
+- you should now be able to run start.py
+
+Usage:
+- Navigate to the webpage after running start.py and clicking on http://localhost:5000/login
+- create an account on the page and now you should be able to search up various properties
+
+License: MIT 
+
+Acknowledgements: Flask, SQLAlchemy, and Pandas
 
 
 ## Getting started
