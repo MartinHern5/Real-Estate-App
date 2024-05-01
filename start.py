@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
 import random
+import smtplib
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yoursecretkey'
@@ -44,13 +45,12 @@ def signup():
         password2 = request.form['password2']
         
         if not Login.query.filter_by(username=username).first():
+            if password1 != password2:
+                flash('Passwords are not the same. Please try again.')
+                return redirect(url_for('login'))
             new_user = Login(username=username, password=password1, favorites='')
             db.session.add(new_user)
             db.session.commit()
-            print("It WORKS!")
-        elif password1 != password2:
-            flash('Passwords are not the same. Please try again.')
-            return redirect(url_for('login'))
         else: 
             flash('Username already taken. Please try again.')
             return redirect(url_for('login'))
@@ -228,6 +228,27 @@ def favorites():
     
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
+    return render_template('settings.html')
+
+@app.route('/changePW', methods=['GET', 'POST'])
+def changePW():
+    
+    
+    if request.method == 'POST':
+        username = session.get('username')
+        password1 = request.form['password1']
+        password2 = request.form['password2']
+        
+        user = Login.query.filter_by(username=username).first()
+
+        if password1 != password2:
+            flash('Passwords are not the same. Please try again.')
+            return redirect(url_for('settings'))
+        
+        user.password = password1
+        db.session.commit()
+        flash("Password Change.")
+        
     return render_template('settings.html')
 
 @app.route('/contact', methods=['GET', 'POST'])

@@ -24,7 +24,7 @@ Installation:
 - you should now be able to run start.py
 
 Usage:
-- Navigate to the webpage after running start.py and clicking on http://localhost:5000/login
+- Navigate to the webpage after running start.py and clicking on http://localhost:5000/
 - create an account on the page and now you should be able to search up various properties
 
 License: MIT 
