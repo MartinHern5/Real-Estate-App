@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
 import pandas as pd
 import random
-import smtplib
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yoursecretkey'
@@ -22,13 +22,20 @@ class Login(db.Model):
 def start():
     return redirect(url_for('login'))
 
+def print_login_table():
+    logins = Login.query.all()
+    print("Login Table:")
+    for login in logins:
+        print(f"ID: {login.id}, Username: {login.username}, Password: {login.password}, Favorites: {login.favorites}")
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    print_login_table()
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        user = Login.query.filter_by(username=username, password=password).first()
-        if user:
+        user = Login.query.filter_by(username=username).first()
+        if user and check_password_hash(user.password, password):
             session['username'] = username
             return redirect(url_for('home'))
         else:
@@ -48,7 +55,8 @@ def signup():
             if password1 != password2:
                 flash('Passwords are not the same. Please try again.')
                 return redirect(url_for('login'))
-            new_user = Login(username=username, password=password1, favorites='')
+            hashed_password = generate_password_hash(password1)
+            new_user = Login(username=username, password=hashed_password, favorites='')
             db.session.add(new_user)
             db.session.commit()
         else: 
@@ -245,10 +253,10 @@ def changePW():
             flash('Passwords are not the same. Please try again.')
             return redirect(url_for('settings'))
         
-        user.password = password1
+        hashed_password = generate_password_hash(password1)
+        user.password = hashed_password
         db.session.commit()
-        flash("Password Change.")
-        
+        flash("Password Change.")        
     return render_template('settings.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
