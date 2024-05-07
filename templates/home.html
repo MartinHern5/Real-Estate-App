@@ -47,8 +47,8 @@
                     <a class="nav-link" href="./favorites">Favorites</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./calc">Mortgage Calculator</a>
-                  </li>
+                    <a class="nav-link" href="./calc">Favorites</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./settings">Settings</a>
                 </li>
@@ -171,23 +171,22 @@
     </div>
 
     <div class="container mt-5">
-        <p>Found {{ results_count }} items matching your search criteria.</p>
         <form id="searchForm" action="/addToFav" method="post">
             <ul>
-                {% for item in results %}
+                {% for property in random_properties %}
                 <li class="row">
                     <div class="col-md-4">
                         <img src="{{ property['House Image'] }}">
                     </div>
                     <div class="col-md-4">
-                        <label><strong>{{ item['Address'] }}</strong></label>
+                        <label><strong>{{ property['Address'] }}</strong></label>
                         <label class="custom-checkbox">
                             <input type="checkbox" value="{{ property['ID'] }}" name="property_id" onchange="submitForm()">
                             <span class="plus">+</span>
                         </label>
-                        <p>Status: {{ item['Status'] }}</p>
-                        <p>Listing Price: ${{ item['Listing Price'] }}</p>
-                        <p>Square Feet: {{ item['Square Ft'] }} sqft</p>
+                        <p>Status: {{ property['Status'] }}</p>
+                        <p>Listing Price: ${{ property['Listing Price'] }}</p>
+                        <p>Square Feet: {{ property['Square Ft'] }} sqft</p>
                         <p>Year Built: {{ property['Year Built'] }}</p>
                         <p>Beds: {{ property['Beds'] }}</p>
                         <p>Baths: {{ property['Baths'] }}</p>

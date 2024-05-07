@@ -47,11 +47,11 @@
   <div class="container">
     <div class="form-box">
       {% with messages = get_flashed_messages() %}
-      {% if messages %}
-      {% for message in messages %}
-      <div class="message">{{ message }}</div>
-      {% endfor %}
-      {% endif %}
+        {% if messages %}
+          {% for message in messages %}
+            <div class="message">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
       {% endwith %}
       <form action="/changePW" method="post">
         <input type="password" id="password1" name="password1" class="input-field" placeholder="Password" required>
