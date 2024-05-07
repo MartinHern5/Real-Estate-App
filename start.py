@@ -259,10 +259,21 @@ def changePW():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    
     return render_template('contact.html')
 
+@app.route('/calc', methods=['GET', 'POST'])
+def calc():
+    return render_template('calc.html')
 
+@app.route('/mortgageCalc', methods=['GET', 'POST'])
+def mortgageCalc():
+    annual_income =  float(request.form.get('annual_income', 0))
+    debt_to_income = 0.28
+    monthly_payment = annual_income * (debt_to_income / 12.0)
+    interest = 0.045
+    loan_term = 360
+    mortgage_max = monthly_payment * ((1 + interest / 12) ** loan_term - 1) / ((interest / 12) * (1 + interest / 12) ** loan_term)
+    return render_template('calc.html', mortgage_max=mortgage_max)
 
 if __name__ == '__main__':
     app.run(debug=True)
